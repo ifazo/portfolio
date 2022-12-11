@@ -91,7 +91,7 @@
     position: fixed;
     z-index: 10;
     top: 90%;
-    left: 40%;
+    left: 0%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,13 +102,13 @@
     padding: 1rem;
     cursor: pointer;
     background-color: var(--color-grey-4);
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1rem;
     box-shadow: var(--box-shadow-1);
   }
   .controls .control i {
@@ -123,13 +123,76 @@
   .controls .active-btn i {
     color: var(--color-white);
   }
+
+  button{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
   
   .theme-btn {
     top: 85%;
-    right: 30%;
-    width: 70px;
-    height: 70px;
+    right: 0%;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin: 1rem;
     background-color: var(--color-grey-4);
     cursor: pointer;
     position: fixed;
@@ -827,7 +890,7 @@
   }
   @media screen and (max-width: 1432px) {
     .container {
-      padding: 7rem 11rem;
+      padding: 1rem 10rem;
     }
   
     .contact-content-con {
@@ -932,7 +995,7 @@
   }
   @media screen and (max-width: 700px) {
     .container {
-      padding: 7rem 3rem;
+      padding: 1rem 5rem;
     }
   
     .about-stats .progress-bars {
