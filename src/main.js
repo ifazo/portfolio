@@ -1,4 +1,6 @@
 import Typed from 'typed.js';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.js';
 
 const typed = new Typed('#element', {
   strings: ['Web Developer', 'UI/UX Designer', 'Software Engineer', 'DevOps Engineer'],
