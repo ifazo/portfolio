@@ -30,7 +30,7 @@ function submitForm(event) {
   if (form.checkValidity()) {
     form.submit();
   } else {
-    alert("Please fill out all required fields.");
+    alert("Something went wrong.");
   }
 }
 
